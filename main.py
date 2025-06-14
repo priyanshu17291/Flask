@@ -16,6 +16,8 @@ def upload_csv():
         return jsonify({'error': 'No file part in the request'}), 400
 
     file = request.files['file']
+    print("Received file:", file.filename)
+    print("Content-Length Header:", request.headers.get('Content-Length'))
 
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
