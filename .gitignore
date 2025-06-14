@@ -1,0 +1,9 @@
+*.pyc
+*.csv
+*.zip
+*.ipynb
+api-venv
+.ipynb_checkpoints
+test_signal_analysis.py
+_main.py
+*.json
